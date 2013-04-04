@@ -1,0 +1,72 @@
+%%% LaTeX Template: Two column article - publication similae
+%%% Based on a template from http://www.howtotex.com/ and extensively modified by Horea Christian (h.chr@mail.ru)
+%%% In distributing please attribute the work to http://www.howtotex.com/ and Horea Christian. 
+%%% Address support questions regarding this version to Horea Christian (h.chr@mail.ru).
+\documentclass[DIV=calc,paper=a4,fontsize=11pt,twocolumn,hyperref]{scrartcl} % KOMA-article class
+\usepackage[english]{babel}	% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx} % Enable pdflatex
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats
+\usepackage{booktabs} % Nicer tables
+\usepackage{fix-cm}
+\usepackage{subfig}
+\usepackage{siunitx} % Beautifully displayed standardized measurement units
+\usepackage[iso, english]{isodate} % Standardized date specification as per ISO 8601 and DIN 5008
+\usepackage{endnotes} % Used for annotating author affiliations at the end
+\usepackage[hidelinks]{hyperref} % Makes URLs, DOIs, and page links work. w/o colored bracketing.
+
+\setlength{\topmargin}{-2.6cm}
+\setlength{\textheight}{25.8cm}
+\setlength{\oddsidemargin}{-1cm}
+\setlength{\evensidemargin}{-1cm}
+\setlength{\textwidth}{17.6cm}
+
+\usepackage[dvipsnames]{xcolor}  % Allows the definition of hex colors
+\definecolor{Imperial}{HTML}{602F6B} % Custom color for the title 
+\definecolor{BurntOrange}{HTML}{CC5500} % Custom color for highlights
+\definecolor{PurpleMountainMajesty}{HTML}{9678B6} % Custom color (fitting the color palette) for miscellaneous purposes
+\definecolor{Aubergine}{HTML}{614051} % Custom color for notes and authors
+\definecolor{lg}{gray}{0.60}
+\definecolor{mg}{gray}{0.40}					
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}} % For DOI hyperlink
+
+
+%%% Custom sectioning (sectsty package)
+\usepackage{sectsty} % Custom sectioning (see below)
+\allsectionsfont{ % Change font of al section commands
+	\usefont{OT1}{phv}{b}{n} % bch-b-n: CharterBT-Bold font
+	}
+
+\sectionfont{ % Change font of \section command
+	\usefont{OT1}{phv}{b}{n} % bch-b-n: CharterBT-Bold font
+	}
+
+
+
+%%% Headers and footers
+\usepackage{fancyhdr} % Needed to define custom headers/footers
+	\pagestyle{fancy} % Enabling the custom headers/footers
+\usepackage{lastpage}	
+
+% Header (empty)
+\lhead{}
+\chead{\scriptsize\textcolor{Aubergine}{Published for \textcolor{Imperial}{OPR} according to \url{https://github.com/TheChymera/OPR.Concepts-Guidelines-for-OPR}}}
+\rhead{}
+% Footer (you may change this to your own needs)
+\lfoot{\textcolor{Imperial}{\footnotesize \today}}
+\cfoot{\tiny\textcolor{Aubergine}{Licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.}}
+\rfoot{\footnotesize\textcolor{Imperial}{page }\textcolor{BurntOrange}{\thepage\ }\textcolor{Imperial}{ of \pageref{LastPage}}}	% "Page 1 of 2"
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+
+%%% Title, author and date metadata
+\usepackage{titling} % For custom titles
+
+\newcommand{\HorRule}{\color{BurntOrange}\rule{\linewidth}{1pt}} % Create a horizontal rule
+
+\pretitle{\vspace{-50pt} \begin{flushleft} \HorRule 
+				\fontsize{30}{40} \usefont{OT1}{phv}{b}{n} \color{Imperial} \selectfont 
+				}
