@@ -1,10 +1,10 @@
 \input{header.tex}
-\title{Concepts and Guidelines for an "Open Publication Revision" System} % Title of article goes here
+\title{Concepts and Guidelines for an ``Open Publication Revision" System} % Title of article goes here
 \posttitle{\par\end{flushleft}}
 
 \preauthor{\begin{flushleft}
 					\large \lineskip 0.2em \usefont{OT1}{phv}{b}{sl} \color{Aubergine}}
-\author{Horea Christian\protect\endnote[1]{Interdisciplinary Centre for Neurosciences (IZN), University of Heidelberg, INF 364 69120 Heidelberg, Germany.}\textsuperscript{,}\protect\endnote[2]{Department of Experimental Psychology, Oxford University, Oxford, UK}
+\author{Horea Christian\protect\endnote[1]{Interdisciplinary Centre for Neurosciences (IZN), University of Heidelberg, INF 364 69120 Heidelberg, Germany.}\textsuperscript{,}\protect\endnote[2]{Department of Experimental Psychology, Oxford University, Oxford, UK.}
 		} % Authors' names go here
 \postauthor{\par\end{flushleft}\HorRule}
 
@@ -13,6 +13,7 @@
 \begin{document}
 \maketitle
 \thispagestyle{fancy} % Enabling the custom headers/footers for the first page 
+\section{Abstract}
 \noindent\textbf{\input{README}} % Loads abstract
 
 \section{Background}
@@ -32,11 +33,11 @@ The article series shows that seasoned members of the scientific publishing comm
 Such disappointments, complemented by many others, are also shared by less established authors \cite{Mainguy2005}.
 
 \section{Issues}
-From the vast pool of opinions in the relevant literature, we have selected a number of knowledge mediation issues which we consider most pressing, and to which we presume to offer pertinent solutions. For ease of overview we use "peer review" to refer to the predominant current implementation thereof (including such aspects as there being 3 reviewers per article).
+From the vast pool of opinions in the relevant literature, we have selected a number of knowledge mediation issues which we consider most pressing, and to which we presume to offer pertinent solutions. For ease of overview we use ``peer review" to refer to the predominant current implementation thereof (including such aspects as there being 3 reviewers per article).
 \begin{enumerate}
 	\item Peer review is time-consuming.
 	This can cause excessive delay of rapidly outdated findings \cite{Riley2006}, or conflicts between authors publishing similar studies.
-	\item Peer review commonly imposes \textit{a priori} gauged "interest" as a filter to publishing \cite{Bloom2006}. 
+	\item Peer review commonly imposes \textit{a priori} gauged ``interest" as a filter to publishing \cite{Bloom2006}. 
 	This may encourage the formation of dogmata \cite{Akerman2006}. 
 	Anecdotally, the unreliability of such foresight has lead to the rejection of Nobel-level articles \cite{Nature2003}.
 	\item Reviewers are expected to contribute without receiving compensation for their work - but risk losing face if consistently refusing.
@@ -44,9 +45,9 @@ From the vast pool of opinions in the relevant literature, we have selected a nu
 	\item Peer review creates hierarchic value for journals \cite{Jennings2006,Wager2006}, rather than for articles. 
 	There is little incentive for peer review coordinators to make an article as good as it possibly can be at a great expense of effort;
 	the incentive is rather to select the probably most citable articles with minimum effort.
-	\item Peer review is left to those with the least time and hands-on experience.
-	Practical expertise of technicians and plentiful time resources of students are utterly disregarded in the process \cite{Lahiri2006}.
-	\item The peer review of their own work is often intransparent to researchers, but even more so to the public \cite{Brown2006}.
+	\item Peer review is conducted by the most reputable of scientists, who often lack both time and hands-on experience.
+	Practical expertise of technicians and plentiful time resources of students are utterly disregarded for the process \cite{Lahiri2006}.
+	\item The peer review of their own work is often opaque to researchers, but even more so to the public \cite{Brown2006}.
 \end{enumerate}
 \section{Methods}
 \subsection{Git}
@@ -56,7 +57,8 @@ The history of revision control exceeds the scope of this article; though it sho
 
 Of the modern implementations of revision control we have chosen to use Git\cite{git} - owing to its distributed and decentralized nature, and support for non-linear development. 
 
-For online publishing we encourage using github\cite{github}. Owing to the nature of Git, however, users will be able to remain integrated in the network regardless where they choose to host.
+For online publishing we encourage using GitHub\cite{github} - an internet platform for hosting Git repositories.
+Owing to the nature of Git, however, users will be able to remain integrated in the network regardless where they choose to host.
 \subsection{LaTeX}
 Our method of choice for keeping information organized within an article (while supporting easy human readability and a pleasurable visual experience) is the LaTeX\cite{latex} document markup language.
 LaTeX is already a standard for a great number of publishers;
@@ -70,10 +72,10 @@ In brief, we believe the issues we address would be resolved in the following ma
 	Articles would receive revision time proportional to how many people they motivate; and authors publishing similar studies would rather collaborate than try to obscure each other.
 	\item By removing any filter and assigning the task of evoking interest to the evolving article;
 	articles would fairly compete for citation and furthering of their findings.
-	\item Revisions are directly attributed to their authors, so there is a strong incentive to invest time in foreign work
+	\item Revisions are directly attributed to their authors, so there is a strong incentive to invest time in other people's work
 	(authors of significant revisions become co-authors of future versions). 
 	Researchers can choose their own personal mix of review and primary publishing work, and receive true effort-proportional recognition. 
-	\item Value is directly assigned to articles, and the chief incentive for all who revise is to make their work as useful as possible.
+	\item Value is assigned to articles directly, and the chief incentive for all who revise is to make their work as useful as possible.
 	\item Everyone is able to revise articles and contribute their strongest personal expertise to the knowledge network.
 	\item OPR as a system would be completely transparent - to members of the public, journalists, and policy makers. 
 \end{enumerate}
@@ -88,12 +90,12 @@ The aforementioned emergent properties owe to the following workflow:
 	\item Authors of several articles may also \textit{merge} their work to increase its scope and visibility.
 \end{itemize}
 It is worth noting that the above process, though intricate and non-linear, is expeditious.
-Contingent on the number of interested researchers, an article could undergo manifold circles of revision, forking, and merger in the months usually required for validation through peer review.
+Contingent on the number of interested researchers, an article could undergo manifold circles of revision, forking, and merging in the months usually required for validation through peer review.
 \subsection{Copyright}
-We suggest licensing any article intended for OPR under a "Creative Commons Attribution-ShareAlike Unported License" (preferably of the most recent version).
+We suggest licensing any article intended for OPR under a ``Creative Commons Attribution-ShareAlike Unported License" (preferably of the most recent version).
 This allows anyone - including journal editors, educators, and policy makers - to build upon an article, and ensures both the continuity of attribution to the researcher(s), and the persistent freedom of the information.
 \subsection{Authorship}
-In Git each revision of every single line is attributed to its specific author.
+In Git each revision of every single line is automatically attributed to its specific author.
 Article authorship is thus defined clearer in OPR than in any other means of research publication.
 We do realize, though, that this very semantic notion of authorship is difficult to reconcile with the currently prevailing concept in scientific publishing.
 We are also aware that article authorship is not identical with research authorship.
@@ -102,21 +104,25 @@ We propose an explicit mention of authors (much like in most scientific journals
 On the occasion of each revision, the author thereof should append his name, and those of any who may have helped him (in whatever order he deems fair), to the end of that list.
 Names should, of course, not be repeated if they are already on the authors' list.
 
-Whenever two or more articles are merged, the order in which their authors' lists are concatenated is left to the discretion of the person performing the operation. 
+Whenever two or more articles are merged, determining the most appropriate order in which their authors' lists are concatenated becomes the responsibility of the person performing the operation. 
 
-Independently of the initial number of authors we encourage using the editorial "we" in the wording of articles.
+The manual input of authors could be eased in the future by automatic calculation of quantitative authorship.
+Git indexes all the information required for this, though a script which quantitatively determines authorship has yet to be written.
+
+Independently of the initial number of authors we encourage using the editorial ``we" in the wording of articles.
 \subsection{Article Structuring}
 We propose structuring articles along the following sections:
 \begin{itemize}
+	\item\textbf{Abstract} - delineating the scope of the article.
 	\item\textbf{Background} - detailing the context of whatever the article discusses.
 	\item\textbf{Issues} - detailing precisely and explicitly what the article presumes to tackle.
 	\item\textbf{Methods} - detailing the (technical) means by which the issues are to be tackled.
 	\item\textbf{Results} - detailing how usage of the methods materializes as far as the author was able to experiment.
 \end{itemize}
-Subsections of these items are left to the author's discretion, but we do insist on everyone strictly adhering by these four overhead categories.
+Subsections of these items are left to the author's discretion, but we do insist on everyone strictly adhering by these five overhead categories.
 Rigorous implementation of this model is expected to assure homogeneity, clarity, and relative ease of performing more complex operations such as merging, forking, or text data mining.
 
-We explicitly and strongly discourage using the popular "Discussion" category, as we expect it to provide a playground for highly speculative debate. 
+We explicitly and strongly discourage using the popular ``Discussion" category, as we expect it to provide a playground for highly speculative debate. 
 We encourage brevity in each category.
 
 In the hope of supporting articles from the humanities in OPR, thought experiments may also be considered valid sources of information for the \textbf{Results} section.
@@ -131,7 +137,7 @@ Metadata such as comments on the template should be left untouched, and vital ma
 In order to better facilitate prospective data mining and semantic authorship every sentence or subsentence (for instance following the usage of a semicolon), should be placed on a new line.
 The LaTeX interpreter conveniently does not introduce a break in this context.
 
-The Git repository name for OPR articles should begin with "OPR." followed by the title, contracted as the author sees fit.
+The Git repository name for OPR articles should begin with ``OPR." followed by the title, contracted as the author sees fit.
 The reasons for contraction are mostly visual, since Git hosting services tailor their websites to short repository names.
 
 Exported PDF files and figures should only be pushed to a repository for milestone versions
@@ -146,9 +152,9 @@ Example: \textcolor{Aubergine}{github-repository-ArticleName-2e0ba199b01d55f242a
 \subsection{Supplementary Information}
 OPR only makes sense if contributors can carefully scrutinize the data and accurately retrace its processing and analysis. 
 We therefore encourage authors to publish their data as well as their post-processing and analysis scripts online,
-and license them as liberally as possible (ideally also under a "Creative Commons Attribution-ShareAlike Unported License").
+and license them as liberally as possible (ideally also under a ``Creative Commons Attribution-ShareAlike Unported License").
 
-Authors should version post-processing and analysis scripts with Git - so that contribution to those is also possible.
+Authors should version data post-processing and analysis scripts with Git - so that contribution to those is also possible.
 We encourage the use of purpose-built scripts in a transparent language (such as Python).
 For the sake of transparency and accessibility, we would recommend FOSS alternatives to proprietary packages, for instance:
 \begin{itemize}
